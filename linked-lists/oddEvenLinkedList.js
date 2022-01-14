@@ -1,5 +1,5 @@
 /*
-  Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices and return the reordered list. S: O(1), T: O(n)
+  Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes with even indices and return the reordered list.
 */
 
 function oddEvenList(head) {
@@ -18,7 +18,7 @@ function oddEvenList(head) {
   let even = head.next; // First even node; start of its list
   let evenHead = even; // Store head node for the even list
 
-  while (even && even.next) { // O(n)
+  while (even && even.next) {
     // Update odd node pointers
     odd.next = even.next;
     odd = odd.next;

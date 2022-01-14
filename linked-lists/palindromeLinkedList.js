@@ -30,7 +30,7 @@ function isPalindrome(head) {
   let fastPointer = head; // Store current head for jumping 2 positions
   let slowPointer = head; // Store current head for jumping 1 position
 
-  while (fastPointer && fastPointer.next) { // O(n)
+  while (fastPointer && fastPointer.next) {
     slowPointer = slowPointer.next; // moves 1 position
     fastPointer = fastPointer.next.next; // moves 2 positions
   }
@@ -38,7 +38,7 @@ function isPalindrome(head) {
   fastPointer = head; // Return to the head for the first half of the list
   slowPointer = reverseList(slowPointer); // Reverse the second half of the list
 
-  while (slowPointer) { // O(n)
+  while (slowPointer) {
     if (slowPointer.val !== fastPointer.val) {
       return false; // not a palindrome :(
     }

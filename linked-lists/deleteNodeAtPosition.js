@@ -16,7 +16,7 @@ function deleteNode(head, index) {
   let node = head; // Store the head node
 
   // Loop through just the nodes that come before the one to be deleted
-  for (let i = 1; i <= index - 1; i++) { // O(n)
+  for (let i = 1; i <= index - 1; i++) {
     // TODO: case for when an index is passed that's larger than the length of the list
     node = node.next; // Update pointers
   }
