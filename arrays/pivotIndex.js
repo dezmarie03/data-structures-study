@@ -14,7 +14,7 @@ function pivotIndex(nums) {
   for (let i = 0; i < nums.length; i++) { // O(n)
     if (rightSum - leftSum - nums[i] === leftSum) return i; // pivot index found
 
-    leftSum += nums[i]; // add index value to leftSum
+    leftSum += nums[i]; // add index value to leftSum to be used in next iteration
   }
 
   return -1; // no pivot index found
