@@ -24,7 +24,7 @@ function findMaxConsecutiveOnes(nums) {
   for (let i = 0; i < nums.length; i++) { // Loop over nums
     if (nums[i] === 1) { // 1 found
       onesCounter++; // increment ones counter
-      maximum = Math.max(onesCounter, maximumFound); // Set maximum counter to larger of the two
+      maximumFound = Math.max(onesCounter, maximumFound); // Set maximum counter to larger of the two
     } else {
       onesCounter = 0; // 1 not found, reset counter
     }
